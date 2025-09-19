@@ -4,8 +4,15 @@ from math import sqrt
 
 
 def isprime(p):
-
-    # votre code ici
+    if p != int(p):
+        return False
+    if p<2:
+        return False
+    for i in range(2,p-1):
+        n = p%i 
+        if n ==0: #p est divisible par i
+            return False #donc il n'est pas premier
+    return True
 
     pass
 
