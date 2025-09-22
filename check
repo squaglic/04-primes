@@ -26,6 +26,7 @@ run_pytest() {
     fi
     PYTEST_RESULT=$(python .python/get_pytest_score.py .python/pytest_results.xml)
     PYTEST_RESULT_INT=$(echo "$PYTEST_RESULT * 100" | bc)
+    #echo "PYTEST_RESULT=$PYTEST_RESULT" # Debug
     echo "Pytest score: $PYTEST_RESULT_INT/100"
 }
 
