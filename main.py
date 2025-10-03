@@ -38,6 +38,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-#test check : pytest .python
-#test de qualité du code : pylint main.py (./check -q fonctionne)
